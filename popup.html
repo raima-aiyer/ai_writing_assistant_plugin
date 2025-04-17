@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Writing Assistant</title>
+  <style>
+    body {
+      width: 400px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .tone-selector {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .tone-button {
+      padding: 8px 16px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      background: white;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .tone-button.active {
+      background: #1a73e8;
+      color: white;
+      border-color: #1a73e8;
+    }
+    .action-button {
+      padding: 10px;
+      background: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .action-button:hover {
+      background: #1557b0;
+    }
+    .status {
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>AI Writing Assistant</h2>
+    <div class="tone-selector">
+      <button class="tone-button active" data-tone="formal">Formal</button>
+      <button class="tone-button" data-tone="casual">Casual</button>
+      <button class="tone-button" data-tone="persuasive">Persuasive</button>
+      <button class="tone-button" data-tone="friendly">Friendly</button>
+      <button class="tone-button" data-tone="professional">Professional</button>
+    </div>
+    <button id="improve" class="action-button">Improve Writing</button>
+    <button id="grammar" class="action-button">Check Grammar</button>
+    <button id="rewrite" class="action-button">Rewrite</button>
+    <div id="status" class="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
