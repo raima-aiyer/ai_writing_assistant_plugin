@@ -1,5 +1,5 @@
 // Your Gemini API key
-const API_KEY = "AIzaSyBx8RMd1E4GjQJ8rqDAOn2OjQrL5qSx6m0";
+const API_KEY = "API KEY HERE";  //place API key before running
 
 // Function to get selected text or content of focused input
 function getSelectedText() {
